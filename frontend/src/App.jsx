@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import Ticker from './Ticker';
 import AddSymbol from './AddSymbol';
 
-const BACKEND = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+const BACKEND = import.meta.env.VITE_BACKEND_URL || 'https://realtimestockticker.onrender.com';
 
 export default function App() {
   const [symbols, setSymbols] = useState(['AAPL','MSFT']);
